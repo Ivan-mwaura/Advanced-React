@@ -1,11 +1,11 @@
 import React from "react"
-import ContextHook from "./ContextAPi/Context";
+import ContextAP from "./ContextAPi/contextPractice1";
 
 const App = () =>{
 
   return(
     <div>
-        <ContextHook/>
+        <ContextAP/>
     </div>
   )
 }
