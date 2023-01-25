@@ -7,7 +7,7 @@ const Login = () => {
 
     return(
         <div>
-            <input type= "text" onChange={(e) => {setUserName(e.target.value)}} name = "text" />
+            <input type= "text" onChange={(e) => {setUserName(e.target.value)}}  />
         </div>
     )
 }

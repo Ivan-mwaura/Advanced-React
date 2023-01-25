@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { Appcontext } from "./Context";
+import { Appcontext } from "../ContextAPi/contextPractice1";
 import "../App.css"
 
 const Grandchild1 = () => {
@@ -8,6 +8,7 @@ const Grandchild1 = () => {
 
     const handleClick = () =>{
         setCount (count + 1 )
+        console.log(count)
     }
 
     return(

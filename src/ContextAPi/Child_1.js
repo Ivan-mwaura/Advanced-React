@@ -1,15 +1,15 @@
-import React from "react"
-import { Appcontext } from "./Context";
+import React ,{useContext} from "react"
+import { Appcontext } from "../ContextAPi/contextPractice1";
 import "../App.css"
 
 const Child1 = () => {
 
-    const{userName} = React.useContext(Appcontext)
+    const{userName} = useContext(Appcontext)
 
     return(
         <div className="main">
             <div>
-                <p>{userName}</p>
+                <p>NAME : {userName}</p>
             </div>
         </div>
     )
