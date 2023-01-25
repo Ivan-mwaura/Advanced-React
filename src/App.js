@@ -1,11 +1,11 @@
 import React from "react"
-import UseEffect1 from "./Hooks/UseEffect";
+import ContextHook from "./ContextAPi/Context";
 
 const App = () =>{
 
   return(
     <div>
-      <UseEffect1/>
+        <ContextHook/>
     </div>
   )
 }

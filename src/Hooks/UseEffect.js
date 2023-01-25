@@ -3,12 +3,19 @@ import React, { useEffect } from 'react';
 const UseEffect1 = () =>{
     const [data,setData] = React.useState({})
     
-    useEffect( () => {
-        fetch("https://jsonplaceholder.typicode.com/comments")
-        .then(res => res.json())
-        .then(res => setData(res))
-        console.log(data)
-    },[])
+       
+        const handleClick = () => {
+         fetch("https://jsonplaceholder.typicode.com/comments")
+            .then(res => res.json())
+            .then(res => setData(res))
+            console.log(data)
+        }
+        
+        useEffect (() => {
+            handleClick();
+        },[])
+   
+  
     return(
         <div>
         {
@@ -20,9 +27,15 @@ const UseEffect1 = () =>{
                         <p>{value.name}</p>
                         <p>{value.body}</p>
                     </div>
+                
                 )
             })
         }
+        <div>
+            <button
+            onClick = {handleClick}
+            ></button>
+        </div>
             
            {/*{data.map(dt => {
             return (
